@@ -1,17 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar';
-import { Home } from './pages/home/home';
+import { NavbarComponent } from './components/navbar/navbar';
+import { FooterComponent } from './components/footer/footer';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NavbarComponent,Home],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent],
   template: `
-  <app-navbar></app-navbar>
-  <app-home></app-home>
-  <router-outlet></router-outlet>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
   `,
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
   protected readonly title = signal('broader-estates');

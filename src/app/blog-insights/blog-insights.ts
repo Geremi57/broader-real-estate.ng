@@ -35,13 +35,7 @@ import { RouterLink } from '@angular/router';
           </div>
 
           <!-- Mobile Auto-scroll Indicator -->
-          <div class="flex items-center space-x-2 md:hidden">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <span class="text-xs text-emerald-600 font-medium">Swipe →</span>
-          </div>
+          
 
           <!-- Desktop View All Link -->
           <a routerLink="/blog" class="hidden md:flex items-center text-emerald-600 hover:text-emerald-700 font-medium group">
@@ -335,9 +329,7 @@ import { RouterLink } from '@angular/router';
             </div>
           </div>
           
-          <span class="text-xs text-gray-400">
-            <span class="text-emerald-600 font-medium">{{ activeDot + 1 }}</span> / 5
-          </span>
+          
         </div>
 
         <!-- Desktop View All Link (hidden on mobile) -->
