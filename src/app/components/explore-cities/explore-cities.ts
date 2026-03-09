@@ -137,7 +137,7 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <!-- Bottom Right Card - Kisumu -->
-            <div class="group relative cursor-pointer h-[240px] lg:h-[285px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('kisumu')">
+            <div class="group relative cursor-pointer h-[240px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('kisumu')">
               <img 
                 src="https://images.unsplash.com/photo-1690715408641-fd1d5b8931fe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8S0lTVU1VfGVufDB8fDB8fHww" 
                 alt="Kisumu Lake Victoria"
@@ -220,12 +220,7 @@ import { RouterLink } from '@angular/router';
 
     /* Responsive height adjustments */
     @media (max-width: 1024px) {
-      .lg\:h-\[600px\] {
-        height: 500px;
-      }
-      .lg\:h-\[285px\] {
-        height: 240px;
-      }
+      
     }
   `]
 })
