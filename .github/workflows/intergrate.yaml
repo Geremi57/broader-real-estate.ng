@@ -1,8 +1,8 @@
-name: continuos intergration
+name: Continuous Integration
 
 on:
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   test_pull_request:
@@ -10,19 +10,18 @@ jobs:
 
     steps:
       - name: Checkout repository
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup Node
-        uses: actions/checkout@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      - name: Install dependecies
-        run: npm ci
+      - name: Install dependencies
+        run: npm install
 
       - name: Run tests
         run: npm test
 
       - name: Build project
         run: npm run build
-
