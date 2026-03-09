@@ -37,7 +37,7 @@ import { RouterLink } from '@angular/router';
           
           <!-- Left Large Card - Nairobi -->
           <div class="lg:col-span-2 group relative cursor-pointer" (click)="exploreCity('nairobi')">
-            <div class="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <!-- Image with Overlay -->
               <img 
                 src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TkFJUk9CSXxlbnwwfHwwfHx8MA%3D%3D" 
@@ -98,7 +98,7 @@ import { RouterLink } from '@angular/router';
           <div class="lg:col-span-1 flex flex-col gap-6 lg:gap-8">
             
             <!-- Top Right Card - Mombasa -->
-            <div class="group relative cursor-pointer h-[240px] lg:h-[285px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('mombasa')">
+            <div class="group relative cursor-pointer h-[240px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('mombasa')">
               <img 
                 src="https://images.unsplash.com/photo-1726397461734-42820573a8a9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TU9NQkFTU0F8ZW58MHx8MHx8fDA%3D" 
                 alt="Mombasa Beach"
@@ -137,7 +137,7 @@ import { RouterLink } from '@angular/router';
             </div>
 
             <!-- Bottom Right Card - Kisumu -->
-            <div class="group relative cursor-pointer h-[240px] lg:h-[285px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('kisumu')">
+            <div class="group relative cursor-pointer h-[240px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('kisumu')">
               <img 
                 src="https://images.unsplash.com/photo-1690715408641-fd1d5b8931fe?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8S0lTVU1VfGVufDB8fDB8fHww" 
                 alt="Kisumu Lake Victoria"
@@ -220,12 +220,7 @@ import { RouterLink } from '@angular/router';
 
     /* Responsive height adjustments */
     @media (max-width: 1024px) {
-      .lg\:h-\[600px\] {
-        height: 500px;
-      }
-      .lg\:h-\[285px\] {
-        height: 240px;
-      }
+      
     }
   `]
 })

@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { provideRouter } from '@angular/router';
 import { FeaturedPropertiesComponent } from './featured-properties';
 
 describe('FeaturedProperties', () => {
@@ -9,6 +9,9 @@ describe('FeaturedProperties', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [FeaturedPropertiesComponent],
+      providers:[
+        provideRouter([])
+      ]
     }).compileComponents();
 
     fixture = TestBed.createComponent(FeaturedPropertiesComponent);
