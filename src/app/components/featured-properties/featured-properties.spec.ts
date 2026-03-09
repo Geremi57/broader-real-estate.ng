@@ -10,7 +10,7 @@ describe('FeaturedProperties', () => {
     await TestBed.configureTestingModule({
       imports: [FeaturedPropertiesComponent],
       providers:[
-        provideRouter
+        provideRouter([])
       ]
     }).compileComponents();
 
