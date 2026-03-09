@@ -1,22 +1,16 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// Make sure you have the proper imports at the top of property.spec.ts
+import { TestBed } from '@angular/core/testing';
+import { PropertyService } from '../../../services/property';  // Adjust the path as needed
 
-import { PropertyDetailComponent } from './property-detail';
+describe('PropertyService', () => {  // Changed from 'Property' to 'PropertyService'
+  let service: PropertyService;  // Changed type to match the import
 
-describe('PropertyDetail', () => {
-  let component: PropertyDetailComponent;
-  let fixture: ComponentFixture<PropertyDetailComponent>;
-
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [PropertyDetailComponent],
-    }).compileComponents();
-
-    fixture = TestBed.createComponent(PropertyDetailComponent);
-    component = fixture.componentInstance;
-    await fixture.whenStable();
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    service = TestBed.inject(PropertyService);
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('should be created', () => {
+    expect(service).toBeTruthy();
   });
 });

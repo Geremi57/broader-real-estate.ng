@@ -98,7 +98,7 @@ import { RouterLink } from '@angular/router';
           <div class="lg:col-span-1 flex flex-col gap-6 lg:gap-8">
             
             <!-- Top Right Card - Mombasa -->
-            <div class="group relative cursor-pointer h-[240px] lg:h-[285px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('mombasa')">
+            <div class="group relative cursor-pointer h-[240px] rounded-3xl overflow-hidden shadow-2xl" (click)="exploreCity('mombasa')">
               <img 
                 src="https://images.unsplash.com/photo-1726397461734-42820573a8a9?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TU9NQkFTU0F8ZW58MHx8MHx8fDA%3D" 
                 alt="Mombasa Beach"
