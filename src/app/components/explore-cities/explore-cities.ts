@@ -37,7 +37,7 @@ import { RouterLink } from '@angular/router';
           
           <!-- Left Large Card - Nairobi -->
           <div class="lg:col-span-2 group relative cursor-pointer" (click)="exploreCity('nairobi')">
-            <div class="relative h-[500px] lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+            <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
               <!-- Image with Overlay -->
               <img 
                 src="https://images.unsplash.com/photo-1611348524140-53c9a25263d6?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8TkFJUk9CSXxlbnwwfHwwfHx8MA%3D%3D" 
