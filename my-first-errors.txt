@@ -1,0 +1,5 @@
+ 1607  history | grep -i error > my-first-errors.txt
+ 1608  git history | grep -i error > my-first-errors.txt
+ 1609  history | grep -i error > my-first-errors.txt
+ 1610  git history | grep -i error > my-first-errors.txt
+ 1611  history | grep -i error > my-first-errors.txt
